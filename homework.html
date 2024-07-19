@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Submission Form</title>
+    <link rel="stylesheet" href="homework.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Homework Submission Form</h1>
+      <form id="homeworkForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required />
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="description">Homework Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required />
+
+        <button type="submit">Submit Homework</button>
+      </form>
+      <div id="confirmationMessage" class="hidden">
+        Your homework has been submitted successfully!
+      </div>
+    </div>
+    <script src="homework.js"></script>
+  </body>
+</html>
